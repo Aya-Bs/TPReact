@@ -1,23 +1,55 @@
-import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import Hello from './components/Hello';
 import Form from './components/Form'; // Importez Form depuis le bon chemin
 import Counter  from './components/counter';
+import render from './components/ComponentClass'
+import ComponentClass from './components/ComponentClass';
+import ComponentFonct from './components/ComponentFonctionnel';
+import Timer from './components/Timer';
+import TextInputFocus from './components/ComponentRef';
+import Event from './components/Event';
+import Events from './components/Events';
+
+import React, { useState, useEffect } from 'react'; 
+
 
 function App() {
   const [count, setCount] = useState(0);
+  const [events, setEvents] = useState([]);
 
+ 
+//ffc composant fonctionnel
+//cc composant classe
   return (
     <>
+       <Events/>
+
+    </>
+    );
+  }
+    export default App; 
+
+    /*
+    <>
+    
       <Hello />
       <Form labelle="FirstName" Name="FirstName" />
       <Form labelle="LastName" Name="LastName" />
+      <br/>
+      <ComponentClass/>
+      <ComponentFonct/>
+      <Counter/>
+      <Timer/>
+      <TextInputFocus/>
+      <Counter/>
     </>
-  );
+    */
+    
+  
+  /*
 }
-
 function Appcounter() {
   return (
     <div>
@@ -26,8 +58,10 @@ function Appcounter() {
       <Counter initialCount={0} step={1} />
     
     </div>
-  );
-}
+  );*/
+
+/*
+
 import ListManager from './components/ListManager'; // Importez le composant ListManager
 
 function AppList() {
@@ -42,10 +76,13 @@ function AppList() {
     </div>
   );
 }
+function ComponentClass(){
+  return <div>  </div>
+}
 
-export default AppList;
+export default ComponentClass;
 
-
+*/
 
   /* <div>
         <a href="https://vite.dev" target="_blank">
@@ -67,3 +104,4 @@ export default AppList;
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */
+      

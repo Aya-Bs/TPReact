@@ -13,6 +13,7 @@ import Event from './components/Event';
 import Events from './components/Events';
 
 import React, { useState, useEffect } from 'react'; 
+import Products from './components/Products';
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
 //cc composant classe
   return (
     <>
-       <Events/>
+    
+       <Products/>
 
     </>
     );
